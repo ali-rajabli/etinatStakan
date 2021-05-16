@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/5484ef70c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid container-nav position-fixed">
+            <div class="row align-items-center">
+                <div class="col-lg-3 nav-panel1">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/images/logo.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 d-flex nav-panel2">
+                    <div class="menu">
+                        <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-between mb-2">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                            <div class="collapse navbar-collapse mt-3" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="nav-item d-flex flex-column list-unstyled">
+                                        <a href="#" title="Call-back" class="position-relative menu-nav call-number">+7 (499) 396-77-77</a>
+                                        <a href="#" title="Call-back" class="position-relative menu-nav call-back">Обратный звонок <i class="fas fa-phone"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="callback-popup" class="popup">
+        <div class="callback-popup-content">
+            <span class="close"><i class="fas fa-times"></i></span>
+            <label for="callback-name-input"><i class="fas fa-user"></i> Имя</label>
+            <input id="callback-name-input" class="callback-input" type="text">
+            <label for="callback-number-input"><i class="fas fa-mobile-alt"></i> Телефонный номер</label>
+            <input id="callback-number-input" class="callback-input" type="number">
+            <button id="callback-send-button">Отправить</button>
+        </div>
+    </div>
+
+    <div class="container-fluid container-contact">
+        <div class="bg-img">
+            <main class="contact-main mb-1">
+                <div class="row contact px-5">
+                    <div class="contact-1">
+                        <h1 class="text-center">Контакты</h1>
+                        <h3 class="text-center">
+                            <a href="./index.html">Главная</a> / Контакты
+                        </h3>
+                    </div>
+                </div>
+                <div class="shape-divider">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path
+                d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z"
+                class="shape-fill"
+              ></path>
+            </svg>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="contact-3">
+        <div class="form row">
+            <img class="col-lg-6 col-sm-12 mx-auto" src="./assets/images/svg/call.svg" alt="" />
+            <form class="col-lg-6 col-sm-12 mx-auto form-inner my-5">
+                <p class="text-center">
+                    По интересующим вопросам логистики, участия в выставках, предложениях о сотрудничестве Вы можете связаться напрямую через форму ниже. Ответ поступит в течении 10-15 минут.
+                </p>
+                <!-- Form Name Input -->
+                <div class="form-div">
+                    <div class="form-name-div form-element name-form">
+                        <div class="img-div">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="input-div">
+                            <input id="name-input" class="border-0 common-input" type="text" placeholder="Ваше имя" />
+                        </div>
+                    </div>
+                    <!-- Form Number Input -->
+                    <div class="form-number-div form-element number-form">
+                        <div class="img-div ms-1">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="input-div">
+                            <input id="number-input" class="border-0 common-input" type="number" placeholder="Введите номер телефона" />
+                        </div>
+                    </div>
+                    <!-- Form Email Input -->
+                    <div class="form-email-div form-element email-form">
+                        <div class="img-div">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="input-div">
+                            <input id="email-input" class="border-0 common-input" type="email" placeholder="Введите ваш email" />
+                        </div>
+                    </div>
+                    <!-- Form Message TextArea -->
+                    <div class="form-message-div form-element message-form">
+                        <div class="textarea-img img-div">
+                            <i class="far fa-list-alt"></i>
+                        </div>
+                        <div class="message-textarea-div">
+                            <textarea id="message-textarea" class="mt-2 ms-1 common-input" placeholder="Ваш запрос или предложение"></textarea>
+                        </div>
+                    </div>
+                    <button id="send-button" type="button" class="btn-form">
+              Отправить
+            </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-4 mb-5">
+        <div class="row contact-map px-5">
+            <div class="col-lg-12 col-sm-12 mx-auto">
+                <h1 class="text-center">Схема проезда</h1>
+                <p class="text-center my-3">
+                    Предварительно позвоните по телефону указанному в шапке сайта!
+                </p>
+                <p class="text-center my-3">
+                    <strong>Часы работы:</strong> 09:00 до 18:00. Суб.- Вск. - выходной
+                </p>
+                <div style="position: relative; overflow: hidden">
+                    <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color: #eee; font-size: 12px; position: absolute; top: 0px">Москва</a
+            >
+            <a
+              href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/simferopolskoye_shosse_38_y_kilometr_vl4/Z04YcAdnTkUHQFtvfXhwdHprZQ==/?ll=37.607700%2C55.415682&utm_medium=mapframe&utm_source=maps&z=16.49"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 14px;
+              "
+              >Симферопольское шоссе, 38-й километр, вл4 — Яндекс.Карты</a
+            >
+            <iframe
+              src="https://yandex.ru/map-widget/v1/-/CCU4mTFEhD"
+              width="1000"
+              height="600"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-2 mb-5 contact-rekvizit text-center">
+      <h1 class="text-center">Наши реквизиты</h1>
+      <div class="contact-boxes row my-4">
+        <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
+          <div class="icon">
+            <span><i class="fas fa-phone"></i></span>
+          </div>
+          <h4>Телефон</h4>
+          <p>
+            <a class="phone" href="">+7 (499) 396-77-77</a><br /><a class="phone" href="">+7 (499) 396-77-77</a
+            >
+          </p>
+        </div>
+        <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
+          <div class="icon">
+            <span><i class="far fa-envelope"></i></span>
+          </div>
+          <h4>Электронная почта</h4>
+          <p>
+            <a class="mail" href="">example@example.com</a><br /><a class="mail" href="">example@example.com</a
+            >
+          </p>
+        </div>
+        <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
+          <div class="icon">
+            <span><i class="fas fa-location-arrow"></i></span>
+          </div>
+          <h4>АДРЕС</h4>
+          <p>
+            ООО «Русский стакан»,<br />Россия, 125299, г.Москва<br />ул.Большая
+            Академическая, дом 6, корп.1
+          </p>
+        </div>
+      </div>
+      <div class="contact-boxes row gx-4">
+        <div class="card card-body card-box col-md-3 col-sm-12 my-3">
+          <div class="icon">
+            <span><i class="far fa-building"></i></span>
+          </div>
+          <h4>Наименование организации</h4>
+          <p>Общество с ограниченной,<br />ответственностью «Русский стакан»</p>
+        </div>
+        <div class="card card-body card-box col-md-3 col-sm-12 my-3">
+          <div class="icon">
+            <span><i class="fas fa-money-check-alt"></i></span>
+          </div>
+          <h4>Банковские реквизиты</h4>
+          <p>
+            ФИЛИАЛ ЦЕНТРАЛЬНЫЙ ПАО БАНКА "ФК ОТКРЫТИЕ",<br /><strong>
+              р/с 40702810104080000166</strong
+            >
+          </p>
+        </div>
+        <div class="card card-body card-box col-md-3 col-sm-12 my-3">
+          <div class="icon">
+            <span><i class="far fa-id-card"></i></span>
+          </div>
+          <h4>ИНН / КПП</h4>
+          <p>
+            <strong> 7713472961,<br />771301001</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll Button -->
+    <button id="scrolltoTop"><i class="fas fa-arrow-up"></i></button>
+    <!-- Footer -->
+    <footer class="row">
+      <!-- <section class="container-fluid"> -->
+      <div class="col-md-3">
+        <img src="./assets/images/logo.png" style="width: 100%" alt="" />
+        <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+      <div class="col-md-3">
+        <h2>ПРОДУКЦИЯ</h2>
+        <div class="underline"></div>
+        <ul>
+          <li><a href="#">Чай в стаканчике </a></li>
+                    <li><a href="#">Кофе в стаканчике </a></li>
+                    <li><a href="#">Капучино в стаканчике </a></li>
+                    <li><a href="#">Горячий шоколад в стаканчике </a></li>
+                    <li><a href="#">Крем-супы в стаканчике </a></li>
+                    <li><a href="#">Молочные коктейли в стаканчике</a></li>
+                    <li><a href="#">Шиповник в стаканчике</a></li>
+                    <li><a href="#">Глинтвейн в стаканчике </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>ИНФОРМАЦИЯ</h2>
+                    <div class="underline"></div>
+                    <ul>
+                        <li><a href="#">Помощь в выборе продукции </a></li>
+                        <li><a href="#">Часы работы </a></li>
+                        <li><a href="#">Доставка </a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Задать вопрос </a></li>
+                        <li><a href="#">Предложение оптовикам</a></li>
+                        <li><a href="#">Получить оптовый прайс </a></li>
+                        <li><a href="#">О компании </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>КОНТАКТЫ</h2>
+                    <div class="underline"></div>
+                    <ul>
+                        <li>
+                            <a href="#">Наш адрес Симферопольское шоссе,38-й километр, вл4 </a>
+                        </li>
+                        <li><a href="#">Схема проезда </a></li>
+                        <li><a href="#">Задать вопрос </a></li>
+                        <li><a href="#"> Сотрудничество </a></li>
+                        <li><a href="#">Реквизиты </a></li>
+                        <li><a href="#">Часы работы </a></li>
+                        <li><a href="#">Торговая марка</a></li>
+                    </ul>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center copyright">
+                    <a class="text-dark" href="# ">© Русский стакан Россия, 2021</a>
+                </div>
+                </footer>
+                <!-- Preloader -->
+                <div class="loader-wrapper">
+                    <span class="loader"><img src="./assets/images/logo.png" alt="" /></span>
+                </div>
+                <!-- jQuery -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+                <!-- Script App -->
+                <script src="./assets/js/preloader.js"></script>
+                <script src="./assets/js/app.js"></script>
+                <script src="./assets/js/scroll.js"></script>
+</body>
+
+</html>

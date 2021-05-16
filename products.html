@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Продукция</title>
+    <link rel="icon" href="./assets/images/logo.png">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!-- Meterial Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/5484ef70c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid container-nav position-fixed">
+            <div class="row align-items-center">
+                <div class="col-lg-3 nav-panel1">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/images/logo.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 d-flex nav-panel2">
+                    <div class="menu">
+                        <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-between mb-2">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                            <div class="collapse navbar-collapse mt-3" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="nav-item d-flex flex-column list-unstyled">
+                                        <a href="#" title="Call-back" class="d-none position-relative menu-nav call-number">+7 (499) 396-77-77</a>
+                                        <a href="#" title="Call-back" class="position-relative menu-nav call-back">Обратный звонок <i class="fas fa-phone"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="callback-popup" class="popup">
+        <div class="callback-popup-content">
+            <span class="close"><i class="fas fa-times"></i></span>
+            <label for="callback-name-input"><i class="fas fa-user"></i> Имя</label>
+            <input id="callback-name-input" class="callback-input" type="text">
+            <label for="callback-number-input"><i class="fas fa-mobile-alt"></i> Телефонный номер</label>
+            <input id="callback-number-input" class="callback-input" type="number">
+            <button id="callback-send-button">Отправить</button>
+        </div>
+    </div>
+
+    <div class="container-products">
+        <div class="row bg-image-color"></div>
+        <div class="row bg-image justify-content-center align-items-center">
+            <div class="col-10 mx-auto text-center bg-image-text">
+                <h1 class="mb-4">Продукция</h1>
+                <a href="#products" class="btn-product">Показать Продукты</a>
+            </div>
+        </div>
+    </div>
+    <section class="tabs container">
+        <div class="row tab-section-div">
+
+            <div class="col-lg-4 tab-images d-flex flex-column justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-lg-12 tab-image" data-name="order">
+                        <img src="./assets/images/etinat-product.png" alt="">
+                    </div>
+                    <div class="col-lg-12 tab-image active" data-name="deliver">
+                        <img src="./assets/images/pallet-boxes-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-lg-12 tab-image" data-name="payment">
+                        <img src="./assets/images/mobile-pay-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 tab tab-style">
+                <div id="#headings" class="row ">
+                    <div class="col-lg-4 tab-1 tab-heading" data-name="order"><span><i class="fas fa-shopping-basket"></i></span> Минимальный заказ</div>
+                    <div class="col-lg-4 tab-2 tab-heading" data-name="deliver"><span><i class="fas fa-truck"></i></span> Доставка</div>
+                    <div class="col-lg-4 tab-3 tab-heading" data-name="payment"><span><i class="fas fa-credit-card"></i></span> Оплата</div>
+                </div>
+                <div class="row contents">
+                    <div class="col-lg-12 tab-content active" data-name="order">
+                        <ul>
+                            <li><i class="fab fa-envira"></i> Минимальный заказ с доставкой по Москве 350 стаканчиков(коробка)</li>
+                            <li><i class="fab fa-envira"></i> Для других городов обсуждается отдельно.</li>
+                            <li><i class="fab fa-envira"></i> Доставка, а так же минимальный заказ в другие города обговариваются отдельно.</li>
+                            <li><i class="fab fa-envira"></i> Доставка, а так же минимальный заказ в другие города обговариваются отдельно.</li>
+                            <li><i class="fab fa-envira"></i> Часы работы и приёма заказов Пн. - Пт. с 9.00 до 18.00 (Временно).</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 tab-content" data-name="deliver">
+                        <ul>
+                            <li><i class="fab fa-envira"></i> Доставка по Москве и МО осуществляется на следующий день после оформления заказа и его подтверждения.</li>
+                            <li><i class="fab fa-envira"></i> В пределах МКАД - 300 руб.</li>
+                            <li><i class="fab fa-envira"></i> За МКАД - 300 руб. + 40 руб. за КМ.</li>
+                            <li><i class="fab fa-envira"></i> Доставка, а так же минимальный заказ в другие города обговариваются отдельно.</li>
+                            <li><i class="fab fa-envira"></i> Часы работы и приёма заказов Пн. - Пт. с 9.00 до 18.00 (Временно)</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 tab-content" data-name="payment">
+                        <ul>
+                            <li><i class="fab fa-envira"></i> Оплата наличными водителю/менеджеру при доставке на адрес.</li>
+                            <li><i class="fab fa-envira"></i> Оплата переводом на карту при подтверждении заказа.</li>
+                            <li><i class="fab fa-envira"></i> Оплата на расчётный счёт компании.</li>
+                            <li><i class="fab fa-envira"></i> Часы работы и приёма заказов Пн. - Пт. с 9.00 до 18.00 (Временно).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="products">
+
+        <div class="row mx-auto mb-4">
+
+            <h1 class="text-center search mb-4">Поиск <i class="fas fa-search"></i></h1>
+            <div class="search-input d-flex justify-content-center mb-3">
+                <input type="search" class="products-search-inp">
+            </div>
+
+            <div class="search-button d-flex justify-content-center">
+                <button class="btn-search">Поиск!</button>
+            </div>
+            <div class="basket-div pt-2 mt-2">
+                <div class="basket my-4">
+                    <button id="cart-button"><i class="fas fa-shopping-cart"></i> Корзина</button>
+                </div>
+            </div>
+        </div>
+        <div id="basket-pop-up" class="popup">
+
+            <div class="popup-content">
+                <span class="close"><i class="fas fa-times"></i></span>
+                <div class="choosed-products-div d-flex justify-content-center align-content-center">
+
+                    
+                    
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="products-div row products-width mx-auto">
+        </div>
+    </section>
+
+
+    <!-- Scroll Button -->
+    <button id="scrolltoTop"><i class="fas fa-arrow-up"></i></button>
+    <!-- Footer begins -->
+    <footer class="row">
+        <!-- <section class="container-fluid"> -->
+        <div class="col-md-3">
+            <img src="./assets/images/logo.png" style="width: 100%;" alt="" />
+            <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="col-md-3">
+            <h2>ПРОДУКЦИЯ</h2>
+            <div class="underline"></div>
+            <ul>
+                <li><a href="#">Чай в стаканчике </a></li>
+                <li><a href="#">Кофе в стаканчике </a></li>
+                <li><a href="#">Капучино в стаканчике </a></li>
+                <li><a href="#">Горячий шоколад в стаканчике </a></li>
+                <li><a href="#">Крем-супы в стаканчике </a></li>
+                <li><a href="#">Молочные коктейли в стаканчике</a></li>
+                <li><a href="#">Шиповник в стаканчике</a></li>
+                <li><a href="#">Глинтвейн в стаканчике </a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h2>ИНФОРМАЦИЯ</h2>
+            <div class="underline"></div>
+            <ul>
+                <li><a href="#">Помощь в выборе продукции </a></li>
+                <li><a href="#">Часы работы </a></li>
+                <li><a href="#">Доставка </a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Задать вопрос </a>
+                    <5i>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h2>КОНТАКТЫ</h2>
+            <div class="underline"></div>
+            <ul>
+                <li>
+                    <a href="#">Наш адрес Симферопольское шоссе,38-й километр, вл4 </a>
+                </li>
+                <li><a href="#">Схема проезда </a></li>
+                <li><a href="#">Задать вопрос </a></li>
+                <li><a href="#"> Сотрудничество </a></li>
+                <li><a href="#">Реквизиты </a></li>
+                <li><a href="#">Часы работы </a></li>
+                <li><a href="#">Торговая марка</a></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center copyright">
+            <a class="text-dark" href="# ">© Русский стакан Россия, 2021</a>
+        </div>
+    </footer>
+    <div class="loader-wrapper">
+        <span class="loader"><img src="./assets/images/logo.png" alt=""></span>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Script App -->
+    <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="./assets/js/frback.js"></script>
+
+</body>
+
+</html>

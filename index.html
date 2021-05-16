@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Продукция</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- Meterial Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/popup.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awsome -->
+    <script
+      src="https://kit.fontawesome.com/5484ef70c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="login-popup">
+      <div class="box">
+        <div class="form">
+          <div class="close">&times;</div>
+          <h2>Мы предлагаем 1 стакан по цене 1 полиэтиленового пакета.</h2>
+        </div>
+        <div class="img-area">
+          <img src="./assets/images/plastic_bag.jpg" alt="" />
+          <img src="./assets/images/cups/cup1.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <header id="header">
+      <div class="container-fluid container-nav position-fixed">
+        <div class="row align-items-center">
+          <div class="col-lg-3 nav-panel1">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="./assets/images/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-9 d-flex nav-panel2">
+            <div class="menu">
+              <nav
+                class="
+                  navbar navbar-expand-lg navbar-light
+                  p-0
+                  justify-content-between
+                  mb-2
+                "
+              >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-3" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        href="./index.html"
+                        title="Home"
+                        class="position-relative menu-nav"
+                        >Главная</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="./products.html"
+                        title="Products"
+                        class="position-relative menu-nav"
+                        >Продукция</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="./wholeseller.html"
+                        title="Whosellers"
+                        class="position-relative menu-nav"
+                        >Оптовикам</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="./about.html"
+                        title="About Company"
+                        class="position-relative menu-nav"
+                        >О компании</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="./contact.html"
+                        title="Contact"
+                        class="position-relative menu-nav"
+                        >Контакты</a
+                      >
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="nav-item d-flex flex-column list-unstyled">
+                      <a
+                        href="#"
+                        title="Call-back"
+                        class="d-none position-relative menu-nav call-number"
+                        >+7 (499) 396-77-77</a
+                      >
+                      <a
+                        href="#"
+                        title="Call-back"
+                        class="position-relative menu-nav call-back"
+                        >Обратный звонок <i class="fas fa-phone"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="callback-popup" class="popup">
+      <div class="callback-popup-content">
+        <span class="close"><i class="fas fa-times"></i></span>
+        <label for="callback-name-input"><i class="fas fa-user"></i> Имя</label>
+        <input id="callback-name-input" class="callback-input" type="text" />
+        <label for="callback-number-input"
+          ><i class="fas fa-mobile-alt"></i> Телефонный номер</label
+        >
+        <input
+          id="callback-number-input"
+          class="callback-input"
+          type="number"
+        />
+        <button id="callback-send-button">Отправить</button>
+      </div>
+    </div>
+
+    <main class="container-fluid container-home">
+      <div class="row content px-5">
+        <div class="col-md-7 content-1">
+          <h1>начни день с Чудо-стакан</h1>
+          <p>здесь, чтобы вывести свою жизнь на новый уровень</p>
+          <button type="button" class="home-button">
+            <span></span>Информация для предпринимателей
+          </button>
+          <button type="button" class="home-button">
+            <span></span>Видео-инструкция
+          </button>
+        </div>
+        <div class="col-md-5 image">
+          <img src="./assets/images/cups/cup-main.png" alt="" />
+        </div>
+      </div>
+      <img src="./assets/images/wavesNegative.svg" alt="" class="wave" />
+    </main>
+    <section class="about-us row">
+      <div class="section-title"><span>Почему нас выбирают</span></div>
+      <div class="about-1 col-lg-4 col-sm-12">
+        <div class="item-1 row">
+          <div class="about-item col-lg-10 col-sm-8">
+            <h5>РОССИЙСКОЕ</h5>
+            <p>ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ</p>
+          </div>
+          <div
+            class="about-icon icon-1 col-lg-2 col-sm-4"
+            data-id="1"
+            data-color="rgba(139, 113, 140, 0.643)"
+          >
+            <img src="./assets/images/cups/cup1.png" alt="" />
+          </div>
+        </div>
+        <div class="item-1 row">
+          <div class="about-item col-lg-10 col-sm-8">
+            <h5>ЦЕЛЛЮЛОЗНОГО</h5>
+            <p>СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА</p>
+          </div>
+          <div
+            class="about-icon icon-2 col-lg-2 col-sm-4"
+            data-id="2"
+            data-color="rgba(134, 127, 117, 0.643)"
+          >
+            <img src="./assets/images/cups/cup2.png" alt="" />
+          </div>
+        </div>
+        <div class="item-1 row">
+          <div class="about-item col-lg-10 col-sm-8">
+            <h5>ПРОИЗВОДСТВО</h5>
+            <p>СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О.</p>
+          </div>
+          <div
+            class="about-icon icon-3 col-lg-2 col-sm-4"
+            data-id="3"
+            data-color="rgb(241, 83, 55, 0.643)"
+          >
+            <img src="./assets/images/cups/cup3.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="about-2 col-lg-4 col-sm-12 my-5">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade mx-auto"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div id="item-1" class="carousel-item active">
+              <img
+                src="./assets/images/cups/cup1.png"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+            </div>
+            <div id="item-2" class="carousel-item">
+              <img
+                src="./assets/images/cups/cup2.png"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+            </div>
+            <div id="item-3" class="carousel-item">
+              <img
+                src="./assets/images/cups/cup3.png"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+            </div>
+            <div id="item-4" class="carousel-item">
+              <img
+                src="./assets/images/cups/cup4.png"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+            </div>
+            <div id="item-5" class="carousel-item">
+              <img
+                src="./assets/images/cups/cup5.png"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+            </div>
+            <div id="item-6" class="carousel-item">
+              <img
+                src="./assets/images/cups/cup6.png"
+                class="d-block w-100 mx-auto"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-3 col-lg-4 col-sm-12">
+        <div class="item-1 row ms-1">
+          <div
+            class="about-icon icon-4 col-lg-2 col-sm-4"
+            data-id="4"
+            data-color="rgb(114, 46, 139, 0.643)"
+          >
+            <img src="./assets/images/cups/cup4.png" alt="" />
+          </div>
+          <div class="about-item col-lg-10 col-sm-8">
+            <h5>ПРОСТОТА</h5>
+            <p>ПРОСТОТА УЧЁТА И ОТЧЁТНОСТИ</p>
+          </div>
+        </div>
+        <div class="item-1 row ms-1">
+          <div
+            class="about-icon icon-5 col-lg-2 col-sm-4"
+            data-id="5"
+            data-color="rgba(243, 148, 190, 0.643)"
+          >
+            <img src="./assets/images/cups/cup5.png" alt="" />
+          </div>
+          <div class="about-item col-lg-10 col-sm-8">
+            <h5>СЕРТИФИЦИРОВАНА</h5>
+            <p>ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА</p>
+          </div>
+        </div>
+        <div class="item-1 row ms-1">
+          <div
+            class="about-icon icon-6 col-lg-2 col-sm-4"
+            data-id="6"
+            data-color="rgba(253, 226, 70, 0.582)"
+          >
+            <img src="./assets/images/cups/cup6.png" alt="" />
+          </div>
+          <div class="about-item col-lg-10 col-sm-8">
+            <h5>ЛЕГКО</h5>
+            <p>ЛЕГКО УТИЛИЗИРУЕТСЯ РАБОТАЕМ С 2010 ГОДА</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row mb-5">
+      <div class="photos col-md-12 mx-auto">
+        <div class="section-title"><span>Везде будет к месту</span></div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="photos-div">
+              <img src="./assets/images/photo1.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="photos-div">
+              <img src="./assets/images/photo2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="photos-div">
+              <img src="./assets/images/photo3.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="photos-div">
+              <img src="./assets/images/photo4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="compare container">
+      <div class="row">
+        <div class="section-title"><span>давайте сравним</span></div>
+        <div class="cup col-md-6 green">
+          <div class="cup-image">
+            <img src="./assets/images/cups/cup1.png" alt="" />
+          </div>
+          <div class="criterias">
+            <ul>
+              <li>
+                <i class="fas fa-check green"></i> Сохраняет свою изначальную
+                форму, бережёт ваши руки, отсутствует посторонний запах.
+              </li>
+              <li>
+                <i class="fas fa-check green"></i> Если заполнить кипятком -
+                заварится вкусный и ароматный чай, ничего лишнего.
+              </li>
+              <li>
+                <i class="fas fa-check green"></i> Мешалка в комплекте,
+                выполненная из того же картона, что и сам чудо-стакан.
+              </li>
+              <li>
+                <i class="fas fa-check green"></i> Мембрана которая позволяет
+                использовать листовые чаи с фруктами и лепестками цветов не
+                позволяя чаинкам всплывать.
+              </li>
+              <li>
+                <i class="fas fa-check green"></i> Вкуснейшие ингредиенты уже
+                внутри, нет нужды покупать их отдельно.
+              </li>
+              <li>
+                <i class="fas fa-check green"></i> К донышку прикреплён сошет с
+                сладкой смесью. Удобно держать, удобно взять с собой.
+                Презентабельный внешний вид.
+              </li>
+              <li>
+                <i class="fas fa-check green"></i> Экологически безопасен,
+                вносит свою лепту в сохранение окружающей среды, время
+                разложения - до 3х месяцев.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cup col-md-6 red">
+          <div class="cup-image">
+            <img src="./assets/images/plast_stakan-min-min-u5127.png" alt="" />
+          </div>
+          <div class="criterias">
+            <ul>
+              <li>
+                <i class="fas fa-check red"></i> Деформируется, обжигает руки,
+                посторонний запах в 8 стаканчиках из 10.
+              </li>
+              <li>
+                <i class="fas fa-check red"></i> Если заполнить кипятком -
+                заварится чай, а так же канцерогены и токсины.
+              </li>
+              <li>
+                <i class="fas fa-check red"></i> Мешалку надо покупать отдельно,
+                при чём тоже пластиковую.
+              </li>
+              <li>
+                <i class="fas fa-check red"></i> Отсутствует мембрана, что
+                обрекает пользоваться пакетированным чаем. Не все пакетированные
+                чаи хорошего качества.
+              </li>
+              <li>
+                <i class="fas fa-check red"></i> Отдельно надо покупать
+                ингредиенты.
+              </li>
+              <li>
+                <i class="fas fa-check red"></i> Сахар надо покупать отдельно.
+                Неудобно держать, неудобно взять с собой. Выглядит уныло.
+              </li>
+              <li>
+                <i class="fas fa-check red"></i> Экологически опасен, т.к
+                среднее время разложения - 600 месяцев или 50 лет.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="row mb-5">
+      <div class="products col-md-12 mx-auto">
+        <div class="section-title"><span>Наше производство</span></div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel homepage-carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="./assets/images/production1.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="./assets/images/production2.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="./assets/images/production3.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="./assets/images/production4.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="./assets/images/production5.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="./assets/images/production1.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="question col-md-12 mx-auto">
+        <div class="section-title">
+          <span style="font-family: 'Rubik', sans-serif; font-weight: 800"
+            >Остались вопросы?</span
+          >
+        </div>
+        <div class="row d-flex align-items-center home-form-row mx-auto">
+          <div class="col-lg-6">
+            <div class="card card-body card-design">
+              <p class="text-center my-3 mx-auto">
+                Мы с удовольствием на них ответим.Заполните форму ниже и наш
+                менеджер перезвонит Вам в течении 10 минут!
+              </p>
+              <form class="home-form mx-auto my-3">
+                <img src="./assets/images/svg/user.svg" alt="" />
+                <input
+                  id="name-input-hm"
+                  class="common-input-hm form-control text-center my-2"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <img src="./assets/images/svg/email.svg" alt="" />
+                <input
+                  id="email-input-hm"
+                  class="common-input-hm form-control text-center my-2"
+                  type="email"
+                  placeholder="Введите ваш email"
+                />
+                <img src="./assets/images/svg/text.svg" alt="" />
+                <textarea
+                  id="message-textarea-hm"
+                  class="common-input-hm form-control text-center my-2"
+                  placeholder="Ваш запрос или предложение"
+                ></textarea>
+                <button
+                  id="send-button-hm"
+                  type="button"
+                  class="btn-home-form my-2"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="question-img">
+              <img src="./assets/images/svg/question.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll Button -->
+    <button id="scrolltoTop"><i class="fas fa-arrow-up"></i></button>
+    <!-- Footer begins -->
+    <footer class="row">
+      <!-- <section class="container-fluid"> -->
+      <div class="col-md-3">
+        <img src="./assets/images/logo.png" style="width: 100%" alt="" />
+        <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+
+      <div class="col-md-3">
+        <h2>ПРОДУКЦИЯ</h2>
+        <div class="underline"></div>
+        <ul>
+          <li><a href="#">Чай в стаканчике </a></li>
+          <li><a href="#">Кофе в стаканчике </a></li>
+          <li><a href="#">Капучино в стаканчике </a></li>
+          <li><a href="#">Горячий шоколад в стаканчике </a></li>
+          <li><a href="#">Крем-супы в стаканчике </a></li>
+          <li><a href="#">Молочные коктейли в стаканчике</a></li>
+          <li><a href="#">Шиповник в стаканчике</a></li>
+          <li><a href="#">Глинтвейн в стаканчике </a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>ИНФОРМАЦИЯ</h2>
+        <div class="underline"></div>
+        <ul>
+          <li><a href="#">Помощь в выборе продукции </a></li>
+          <li><a href="#">Часы работы </a></li>
+          <li><a href="#">Доставка </a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Задать вопрос </a></li>
+          <li><a href="#">Предложение оптовикам</a></li>
+          <li><a href="#">Получить оптовый прайс </a></li>
+          <li><a href="#">О компании </a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>КОНТАКТЫ</h2>
+        <div class="underline"></div>
+        <ul>
+          <li>
+            <a href="#">Наш адрес Симферопольское шоссе,38-й километр, вл4 </a>
+          </li>
+          <li><a href="#">Схема проезда </a></li>
+          <li><a href="#">Задать вопрос </a></li>
+          <li><a href="#"> Сотрудничество </a></li>
+          <li><a href="#">Реквизиты </a></li>
+          <li><a href="#">Часы работы </a></li>
+          <li><a href="#">Торговая марка</a></li>
+        </ul>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center copyright">
+        <a class="text-dark" href="# ">© Русский стакан Россия, 2021</a>
+      </div>
+    </footer>
+
+    <div class="loader-wrapper">
+      <span class="loader"><img src="./assets/images/logo.png" alt="" /></span>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script App -->
+    <script src="./assets/js/popup.js"></script>
+    <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+  </body>
+</html>
