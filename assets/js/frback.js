@@ -65,7 +65,6 @@ cups_ref.on('value', function (snapshot) {
 });
 
 function addItem(count, name, price) {
-  $('#total-price-display').html(total_price + ' ₽');
   $('.products-div').append(`
       <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
                 <div class="product-item product-item-${count}">
@@ -108,16 +107,22 @@ function addItem(count, name, price) {
 
 function addToBasket(name, price, image) {
   total_price += price;
-  $('.popup-content').append(`
+  $('#choosed-items-div').append(`
     
-    <div class="choosed-item row">
-      <img class="col-3" src="${image}">  
-      <div class="col-3 choosed-item-name">${name}</div>         
-    <div class="col-2 choosed-item-price-div">          
-      <div class="choosed-item-price-title">Цена</div>            
-        <div class="choosed-item-price">${price} ₽</div>
-      </div>           
-    <div class="col-3 remove-choosed-item"><i class="fas fa-times"></i></div>
+  <div class="col-3 choosed-item">
+  <img class="choosed-item-image" src="${image}">
+  <div class="choosed-item-name">${name}</div>
+  <div class="choosed-item-price">Цена : ${price} ₽</div>
+  <div class="total-price">Общее : ${price} ₽</div>
+  <div class="change-count-div">
+      <div class="choosed-item-count">1</div>
+      <div class="buttons-div">
+          <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
+          <button class="increment-count"><i class="fas fa-plus-square"></i></button>
+      </div>
+  </div>
+  <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
+</div>
 
     `);
 }

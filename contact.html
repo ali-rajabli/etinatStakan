@@ -22,49 +22,45 @@
 
 <body>
     <header id="header">
-        <div class="container-fluid container-nav position-fixed">
-            <div class="row align-items-center">
-                <div class="col-lg-3 nav-panel1">
-                    <div class="logo">
-                        <a href="./index.html">
-                            <img src="./assets/images/logo.png" alt="" />
-                        </a>
+        <div class="container-fluid p-0 position-fixed container-nav" style="z-index: 100;">
+            <div class="row">
+                <div class="col-lg-2 nav-sect-1">
+                    <div class="logo-div">
+                        <a href="./index.html"><img src="./assets/images/logo.png" alt=""></a>
                     </div>
                 </div>
-
-                <div class="col-lg-9 d-flex nav-panel2">
-                    <div class="menu">
-                        <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-between mb-2">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                            <div class="collapse navbar-collapse mt-3" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li class="nav-item d-flex flex-column list-unstyled">
-                                        <a href="#" title="Call-back" class="position-relative menu-nav call-number">+7 (499) 396-77-77</a>
-                                        <a href="#" title="Call-back" class="position-relative menu-nav call-back">Обратный звонок <i class="fas fa-phone"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                <div class="col-lg-10 nav-sect-2">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav nav-sect-3">
+                                <li class="nav-item">
+                                    <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
+                                </li>
+                                <li class="nav-item-call">
+                                    <a href="#" title="Call-back" class="position-relative menu-nav call-number">+7 (499) 396-77-77</a>
+                                    <button href="#" title="Obratniy-zvanok" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
+                                </li>
+                                <li class="nav-item-basket">
+                                    <button id="cart-button" title="show-basket" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -84,7 +80,7 @@
     <div class="container-fluid container-contact">
         <div class="bg-img">
             <main class="contact-main mb-1">
-                <div class="row contact px-5">
+                <div class="row contact row ms-0 me-0 px-5">
                     <div class="contact-1">
                         <h1 class="text-center">Контакты</h1>
                         <h3 class="text-center">
@@ -104,7 +100,7 @@
         </div>
     </div>
     <div class="contact-3">
-        <div class="form row">
+        <div class="form row row ms-0 me-0">
             <img class="col-lg-6 col-sm-12 mx-auto" src="./assets/images/svg/call.svg" alt="" />
             <form class="col-lg-6 col-sm-12 mx-auto form-inner my-5">
                 <p class="text-center">
@@ -156,7 +152,7 @@
     </div>
 
     <div class="contact-4 mb-5">
-        <div class="row contact-map px-5">
+        <div class="row contact-map row ms-0 me-0 px-5">
             <div class="col-lg-12 col-sm-12 mx-auto">
                 <h1 class="text-center">Схема проезда</h1>
                 <p class="text-center my-3">
@@ -325,6 +321,7 @@
                 <!-- Script App -->
                 <script src="./assets/js/preloader.js"></script>
                 <script src="./assets/js/app.js"></script>
+                <script src="./assets/js/validations.js"></script>
                 <script src="./assets/js/scroll.js"></script>
 </body>
 

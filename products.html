@@ -24,54 +24,113 @@
 
 <body>
     <header id="header">
-        <div class="container-fluid container-nav position-fixed">
-            <div class="row align-items-center">
-                <div class="col-lg-3 nav-panel1">
-                    <div class="logo">
-                        <a href="./index.html">
-                            <img src="./assets/images/logo.png" alt="" />
-                        </a>
+        <div class="container-fluid p-0 position-fixed container-nav" style="z-index: 100;">
+            <div class="row">
+                <div class="col-lg-2 nav-sect-1">
+                    <div class="logo-div">
+                        <a href="./index.html"><img src="./assets/images/logo.png" alt=""></a>
                     </div>
                 </div>
-
-                <div class="col-lg-9 d-flex nav-panel2">
-                    <div class="menu">
-                        <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-between mb-2">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                  </button>
-                            <div class="collapse navbar-collapse mt-3" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li class="nav-item d-flex flex-column list-unstyled">
-                                        <a href="#" title="Call-back" class="d-none position-relative menu-nav call-number">+7 (499) 396-77-77</a>
-                                        <a href="#" title="Call-back" class="position-relative menu-nav call-back">Обратный звонок <i class="fas fa-phone"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                <div class="col-lg-10 nav-sect-2">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav nav-sect-3">
+                                <li class="nav-item">
+                                    <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
+                                </li>
+                                <li class="nav-item-call">
+                                    <button href="#" title="Obratniy-zvanok" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
+                                </li>
+                                <li class="nav-item-basket">
+                                    <button id="cart-button" title="show-basket" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
+    <div id="basket-pop-up" class="popup">
 
+        <div class="popup-content">
+            <span class="close"><i class="fas fa-times"></i></span>
+
+            <!-- Səbətə yığılacaqlar -->
+
+            <!-- Boş olanda görünəcək görüntü -->
+
+            <!-- <div class="empty-title-div">Пустой ...</div> -->
+
+            <!-- Səbətdəki mallar -->
+
+            <div id="choosed-items-div">
+
+                <div class="col-3 choosed-item">
+                    <img class="choosed-item-image" src="./assets/images/cups/cup1.png">
+                    <div class="choosed-item-name">Thyme Tea Cup</div>
+                    <div class="choosed-item-price">Цена : 100 ₽</div>
+                    <div class="total-price">Общее : 100 ₽</div>
+                    <div class="change-count-div">
+                        <div class="choosed-item-count">1</div>
+                        <div class="buttons-div">
+                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
+                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
+                        </div>
+                    </div>
+                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
+                </div>
+
+                <div class="col-3 choosed-item">
+                    <img class="choosed-item-image" src="./assets/images/cups/cup3.png">
+                    <div class="choosed-item-name">Saffron Tea Cup</div>
+                    <div class="choosed-item-price">Цена : 100 ₽</div>
+                    <div class="total-price">Общее : 100 ₽</div>
+                    <div class="change-count-div">
+                        <div class="choosed-item-count">1</div>
+                        <div class="buttons-div">
+                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
+                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
+                        </div>
+                    </div>
+                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
+                </div>
+
+                <div class="col-3 choosed-item">
+                    <img class="choosed-item-image" src="./assets/images/cups/cup6.png">
+                    <div class="choosed-item-name">Quince Tea Cup</div>
+                    <div class="choosed-item-price">Цена : 100 ₽</div>
+                    <div class="total-price">Общее : 100 ₽</div>
+                    <div class="change-count-div">
+                        <div class="choosed-item-count">1</div>
+                        <div class="buttons-div">
+                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
+                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
+                        </div>
+                    </div>
+                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
     <div id="callback-popup" class="popup">
         <div class="callback-popup-content">
             <span class="close"><i class="fas fa-times"></i></span>
@@ -84,8 +143,8 @@
     </div>
 
     <div class="container-products">
-        <div class="row bg-image-color"></div>
-        <div class="row bg-image justify-content-center align-items-center">
+        <div class="row ms-0 me-0 bg-image-color"></div>
+        <div class="row ms-0 me-0 bg-image justify-content-center align-items-center">
             <div class="col-10 mx-auto text-center bg-image-text">
                 <h1 class="mb-4">Продукция</h1>
                 <a href="#products" class="btn-product">Показать Продукты</a>
@@ -93,7 +152,7 @@
         </div>
     </div>
     <section class="tabs container">
-        <div class="row tab-section-div">
+        <div class="row ms-0 me-0 tab-section-div">
 
             <div class="col-lg-4 tab-images d-flex flex-column justify-content-center align-items-center">
                 <div class="row">
@@ -149,7 +208,7 @@
     </section>
     <section id="products">
 
-        <div class="row mx-auto mb-4">
+        <div class="row ms-0 me-0 mb-4">
 
             <h1 class="text-center search mb-4">Поиск <i class="fas fa-search"></i></h1>
             <div class="search-input d-flex justify-content-center mb-3">
@@ -159,25 +218,6 @@
             <div class="search-button d-flex justify-content-center">
                 <button class="btn-search">Поиск!</button>
             </div>
-            <div class="basket-div pt-2 mt-2">
-                <div class="basket my-4">
-                    <button id="cart-button"><i class="fas fa-shopping-cart"></i> Корзина</button>
-                </div>
-            </div>
-        </div>
-        <div id="basket-pop-up" class="popup">
-
-            <div class="popup-content">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <div class="choosed-products-div d-flex justify-content-center align-content-center">
-
-                    
-                    
-                    </div>
-
-                </div>
-            </div>
-
         </div>
         <div class="products-div row products-width mx-auto">
         </div>
@@ -253,6 +293,7 @@
     <!-- Script App -->
     <script src="./assets/js/preloader.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/validations.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <!-- FireBase -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
