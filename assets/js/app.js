@@ -62,18 +62,17 @@ setInterval(function() {
     if (index == images_array.length - 1) index = 0;
 }, 5000);
 
-// Səbətin PopUp kimi açılması
+// Səbətin hover olanda açılması
 
-$('#cart-button').on('click', function() {
-    $('#basket-pop-up').css('display', 'block');
-});
+$('#cart-button').hover(function() {
 
-$('.close').on('click', function() {
-    $('#basket-pop-up').css('display', 'none');
+}, function() {
+
 })
 
-$(window).on('click', function(event) {
-    if ($('#basket-pop-up').is(event.target)) {
-        $('#basket-pop-up').css('display', 'none');
-    }
+$('#cart-button').mouseover(function() {
+    $('.minicart').css('display', "block")
+})
+$('.cart-items').mouseleave(function() {
+    $('.minicart').css('display', "none")
 })

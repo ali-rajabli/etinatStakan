@@ -59,6 +59,53 @@
                                 </li>
                                 <li class="nav-item-basket">
                                     <button id="cart-button" title="show-basket" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <div class="cart-items">
+                                        <div class="minicart">
+                                            <div class="minicart--item-container">
+                                                У вас
+                                                <span class="minicart--item-count" id="cart-items-all-count">2</span> товара в корзине</div>
+                                            <hr>
+                                            <ul>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup4.png" class="choosed--item-image">
+                                                        <h1 class="title">Sah Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">2</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">100</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">200</span>₽ (<span id="cart-item-count">2</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup3.png" class="choosed--item-image">
+                                                        <h1 class="title">Saffron Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">2</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">100</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">200</span>₽ (<span id="cart-item-count">2</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                            <div class="minicart--subtotal">
+                                                <p class="minicart--subtotal-title">Всего товаров:</p>
+                                                <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">500</span> ₽</p>
+                                            </div>
+                                            <input id="minicart--input" type="button" value="Просмотр сведений о корзине">
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -67,86 +114,18 @@
             </div>
         </div>
     </header>
-    <div id="basket-pop-up" class="popup">
-
-        <div class="popup-content">
-            <span class="close"><i class="fas fa-times"></i></span>
-
-            <!-- Səbətə yığılacaqlar -->
-
-            <!-- Boş olanda görünəcək görüntü -->
-
-            <!-- <div class="empty-title-div">Пустой ...</div> -->
-
-            <!-- Səbətdəki mallar -->
-
-            <div id="choosed-items-div">
-
-                <div class="col-3 choosed-item">
-                    <img class="choosed-item-image" src="./assets/images/cups/cup1.png">
-                    <div class="choosed-item-name">Thyme Tea Cup</div>
-                    <div class="choosed-item-price">Цена : 100 ₽</div>
-                    <div class="total-price">Общее : 100 ₽</div>
-                    <div class="change-count-div">
-                        <div class="choosed-item-count">1</div>
-                        <div class="buttons-div">
-                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
-                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
-                        </div>
-                    </div>
-                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
-                </div>
-
-                <div class="col-3 choosed-item">
-                    <img class="choosed-item-image" src="./assets/images/cups/cup3.png">
-                    <div class="choosed-item-name">Saffron Tea Cup</div>
-                    <div class="choosed-item-price">Цена : 100 ₽</div>
-                    <div class="total-price">Общее : 100 ₽</div>
-                    <div class="change-count-div">
-                        <div class="choosed-item-count">1</div>
-                        <div class="buttons-div">
-                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
-                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
-                        </div>
-                    </div>
-                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
-                </div>
-
-                <div class="col-3 choosed-item">
-                    <img class="choosed-item-image" src="./assets/images/cups/cup6.png">
-                    <div class="choosed-item-name">Quince Tea Cup</div>
-                    <div class="choosed-item-price">Цена : 100 ₽</div>
-                    <div class="total-price">Общее : 100 ₽</div>
-                    <div class="change-count-div">
-                        <div class="choosed-item-count">1</div>
-                        <div class="buttons-div">
-                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
-                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
-                        </div>
-                    </div>
-                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
-                </div>
 
 
-            </div>
-
-        </div>
-    </div>
 
     <div id="callback-popup" class="popup">
         <div class="callback-popup-content">
             <span class="close"><i class="fas fa-times"></i></span>
             <label for="callback-name-input"><i class="fas fa-user"></i> Имя</label>
             <input id="callback-name-input" class="callback-input" type="text" />
-            <label for="callback-number-input"><i class="fas fa-mobile-alt"></i> Телефонный номер</label
-        >
-        <input
-          id="callback-number-input"
-          class="callback-input"
-          type="number"
-        />
-        <button id="callback-send-button">Отправить</button>
-      </div>
+            <label for="callback-number-input"><i class="fas fa-mobile-alt"></i> Телефонный номер</label>
+            <input id="callback-number-input" class="callback-input" type="number" />
+            <button id="callback-send-button">Отправить</button>
+        </div>
     </div>
 
     <main class="container-fluid container-home">
@@ -234,10 +213,10 @@
             </div>
         </div>
         <div class="about-2 col-lg-4 col-sm-12">
-                <div class="home-image">
-                    <img src="./assets/images/cups/cup1.png">
-                </div>
+            <div class="home-image">
+                <img src="./assets/images/cups/cup1.png">
             </div>
+        </div>
         </div>
         <div class="about-3 col-lg-4 col-sm-12">
             <div class="item-1 row ms-1">
@@ -373,7 +352,7 @@
     </section>
     <div class="row row ms-0 me-0 mb-5">
         <div class="products products-bg col-md-12 mx-auto">
-            <div class="section-title"><span style="font-family: 'Rubik', sans-serif; font-weight: 500" >Наше производство</span></div>
+            <div class="section-title"><span style="font-family: 'Rubik', sans-serif; font-weight: 500">Наше производство</span></div>
             <div id="carouselExampleFade2" class="carousel slide business-carousel-home carousel-dark" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
@@ -511,4 +490,5 @@
             <script src="./assets/js/validations.js"></script>
             <script src="./assets/js/scroll.js"></script>
 </body>
+
 </html>

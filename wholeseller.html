@@ -33,8 +33,8 @@
                 <div class="col-lg-10 nav-sect-2">
                     <nav class="navbar navbar-light navbar-expand-lg">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav nav-sect-3">
                                 <li class="nav-item">
@@ -56,7 +56,54 @@
                                     <button href="#" title="Obratniy-zvanok" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
                                 </li>
                                 <li class="nav-item-basket">
-                                    <button id="cart-button" title="show-basket" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <a id="cart-button" title="show-basket" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></a>
+                                    <div class="cart-items">
+                                        <div class="minicart">
+                                            <div class="minicart--item-container">
+                                                У вас
+                                                <span class="minicart--item-count" id="cart-items-all-count">2</span> товара в корзине</div>
+                                            <hr>
+                                            <ul>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup4.png" class="choosed--item-image">
+                                                        <h1 class="title">Sah Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">2</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">100</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">200</span>₽ (<span id="cart-item-count">2</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup3.png" class="choosed--item-image">
+                                                        <h1 class="title">Saffron Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">2</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">100</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">200</span>₽ (<span id="cart-item-count">2</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                            <div class="minicart--subtotal">
+                                                <p class="minicart--subtotal-title">Всего товаров:</p>
+                                                <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">500</span> ₽</p>
+                                            </div>
+                                            <input id="minicart--input" type="button" value="Просмотр сведений о корзине">
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
