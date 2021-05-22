@@ -258,6 +258,10 @@ body {
     color: rgb(45, 119, 129);
 }
 
+#cart-button-phone {
+    display: none;
+}
+
 
 /* ==================================== */
 
@@ -554,9 +558,9 @@ footer ul {
 }
 
 .products-bg {
+    border-radius: 30px;
     height: 60vh;
-    background: linear-gradient( rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/white-bg2.jpg") center/cover fixed no-repeat;
-    position: relative;
+    background: linear-gradient( rgba(243, 244, 241, 0.6), rgba(247, 248, 246, 0.6));
 }
 
 .single-box {
@@ -1937,6 +1941,12 @@ input[type="search"]::-webkit-search-cancel-button {
     text-decoration: underline;
 }
 
+.choosed--items-count,
+.choosed--items-price,
+.minicart--item-price {
+    text-align: center;
+}
+
 
 /* =================== */
 
@@ -1945,7 +1955,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .filtered-cup-section {
     border-radius: 32px;
-    background: linear-gradient( rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/white-bg.jpg") center/cover fixed no-repeat;
+    background: linear-gradient( rgba(243, 244, 241, 0.6), rgba(247, 248, 246, 0.6));
     padding: 0rem 3rem;
 }
 
@@ -2162,6 +2172,12 @@ input[type="search"]::-webkit-search-cancel-button {
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+    #cart-button-phone {
+        display: block;
+    }
+    #cart-button {
+        display: none;
     }
 }
 
