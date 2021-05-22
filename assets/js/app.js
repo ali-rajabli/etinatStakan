@@ -38,7 +38,7 @@ $('.tab-heading').click(function() {
 
 // CallBack PopUp
 
-$('.call-back').on('click', function() {
+$('.call-back-link').on('click', function() {
     $('#callback-popup').css('display', 'block');
 });
 
