@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Продукция</title>
+    <title>Главная</title>
     <link rel="icon" href="./assets/images/logo.png" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -40,25 +40,25 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav nav-sect-3">
                                 <li class="nav-item">
-                                    <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
+                                    <a href="./index.html" class="position-relative menu-nav">Главная</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
+                                    <a href="./products.html" class="position-relative menu-nav">Продукция</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
+                                    <a href="./wholeseller.html" class="position-relative menu-nav">Оптовикам</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
+                                    <a href="./about.html" class="position-relative menu-nav">О компании</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
+                                    <a href="./contact.html" class="position-relative menu-nav">Контакты</a>
                                 </li>
                                 <li class="nav-item-call">
-                                    <button href="#" title="Obratniy-zvanok" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
+                                    <button href="#" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
                                 </li>
                                 <li class="nav-item-basket">
-                                    <button id="cart-button" title="show-basket" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <button id="cart-button" class="position-relative menu-nav basket-link" onclick="window.location.href='./product-buy.html'"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
                                     <div class="cart-items">
                                         <div class="minicart">
                                             <div class="minicart--item-container">
@@ -103,7 +103,7 @@
                                                 <p class="minicart--subtotal-title">Всего товаров:</p>
                                                 <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">500</span> ₽</p>
                                             </div>
-                                            <input id="minicart--input" type="button" value="Просмотр сведений о корзине">
+                                            <input id="minicart--input" onclick="window.location.href='./product-buy.html'" type="button" value="Просмотр сведений о корзине">
                                         </div>
                                     </div>
                                 </li>
@@ -114,8 +114,6 @@
             </div>
         </div>
     </header>
-
-
 
     <div id="callback-popup" class="popup">
         <div class="callback-popup-content">
@@ -129,7 +127,7 @@
     </div>
 
     <main class="container-fluid container-home">
-        <div class="row content row ms-0 me-0 px-5">
+        <div id="etinat-stakan" class="row content row ms-0 me-0 px-5">
             <div class="col-md-7 content-1" style="z-index: 1;">
                 <h1>начни день с<br><span style="color: #306d34;">ETINAT</span>-стакан</h1>
                 <p>здесь, чтобы вывести свою жизнь на новый уровень</p>
@@ -139,37 +137,37 @@
             <div class="col-md-5 image header-cup" style="z-index: 1;">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="5000">
+                        <div class="carousel-item active" data-bs-interval="3000">
                             <img class="ticket" src="./assets/images/ticket.png" alt="" />
                             <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
                             <img src="./assets/images/cups/cup-main.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="3000">
                             <img class="ticket" src="./assets/images/ticket.png" alt="" />
                             <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
                             <img src="./assets/images/cups/cup1.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="3000">
                             <img class="ticket" src="./assets/images/ticket.png" alt="" />
                             <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
                             <img src="./assets/images/cups/cup2.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="3000">
                             <img class="ticket" src="./assets/images/ticket.png" alt="" />
                             <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
                             <img src="./assets/images/cups/cup3.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="3000">
                             <img class="ticket" src="./assets/images/ticket.png" alt="" />
                             <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
                             <img src="./assets/images/cups/cup4.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="3000">
                             <img class="ticket" src="./assets/images/ticket.png" alt="" />
                             <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
                             <img src="./assets/images/cups/cup5.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="5000">
+                        <div class="carousel-item" data-bs-interval="3000">
                             <img class="ticket" src="./assets/images/ticket.png" alt="" />
                             <span class="ticket-span"><i class="fas fa-ruble-sign fa-sm"></i> 10</span>
                             <img src="./assets/images/cups/cup6.png" class="d-block w-100" alt="...">
@@ -382,113 +380,110 @@
             </div>
         </div>
     </div>
-    <div class="row row ms-0 me-0 mb-5">
+    <div id="question-main" class="row row ms-0 me-0 mb-5">
         <div class="question col-md-12 mx-auto">
             <div class="section-title">
-                <span style="font-family: 'Rubik', sans-serif; font-weight: 800">Остались вопросы?</span
-          >
-        </div>
-        <div class="row d-flex align-items-center home-form-row mx-auto">
-          <div class="col-lg-6">
-            <div class="card card-body card-design">
-              <p class="text-center my-3 mx-auto">
-                Мы с удовольствием на них ответим.Заполните форму ниже и наш
-                менеджер перезвонит Вам в течении 10 минут!
-              </p>
-              <form class="home-form mx-auto my-3">
-                <img src="./assets/images/svg/user.svg" alt="" />
-                <input id="name-input-hm" class="common-input-hm form-control text-center my-2" type="text" placeholder="Ваше имя"/>
-                <img src="./assets/images/svg/email.svg" alt="" />
-                <input id="email-input-hm" class="common-input-hm form-control text-center my-2"type="email"placeholder="Введите ваш email"/>
-                <img src="./assets/images/svg/text.svg" alt="" />
-                <textarea id="message-textarea-hm" class="common-input-hm form-control text-center my-2" placeholder="Ваш запрос или предложение"></textarea>
-                <button id="send-button-hm" type="button" class="btn-home-form my-2">Отправить</button>
-              </form>
+                <span style="font-family: 'Rubik', sans-serif; font-weight: 800">Остались вопросы?</span>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="question-img">
-              <img src="./assets/images/svg/question.svg" alt="" />
+            <div class="row d-flex align-items-center home-form-row mx-auto">
+                <div class="col-lg-6">
+                    <div class="card card-body card-design">
+                        <p class="text-center my-3 mx-auto">
+                            Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер перезвонит Вам в течении 10 минут!
+                        </p>
+                        <form class="home-form mx-auto my-3">
+                            <img src="./assets/images/svg/user.svg" alt="" />
+                            <input id="name-input-hm" class="common-input-hm form-control text-center my-2" type="text" placeholder="Ваше имя" />
+                            <img src="./assets/images/svg/email.svg" alt="" />
+                            <input id="email-input-hm" class="common-input-hm form-control text-center my-2" type="email" placeholder="Введите ваш email" />
+                            <img src="./assets/images/svg/text.svg" alt="" />
+                            <textarea id="message-textarea-hm" class="common-input-hm form-control text-center my-2" placeholder="Ваш запрос или предложение"></textarea>
+                            <button id="send-button-hm" type="button" class="btn-home-form my-2">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="question-img">
+                        <img src="./assets/images/svg/question.svg" alt="" />
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Scroll Button -->
     <button id="scrolltoTop"><i class="fas fa-arrow-up"></i></button>
     <!-- Footer begins -->
     <footer class="row">
-      <!-- <section class="container-fluid"> -->
-      <div class="col-md-3">
-        <img src="./assets/images/logo.png" style="width: 100%" alt="" />
-        <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin-in"></i>
-      </div>
-
-      <div class="col-md-3">
-        <h2>ПРОДУКЦИЯ</h2>
-        <div class="underline"></div>
-        <ul>
-          <li><a href="#">Чай в стаканчике </a></li>
-          <li><a href="#">Кофе в стаканчике </a></li>
-          <li><a href="#">Капучино в стаканчике </a></li>
-          <li><a href="#">Горячий шоколад в стаканчике </a></li>
-          <li><a href="#">Крем-супы в стаканчике </a></li>
-          <li><a href="#">Молочные коктейли в стаканчике</a></li>
-          <li><a href="#">Шиповник в стаканчике</a></li>
-          <li><a href="#">Глинтвейн в стаканчике </a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <h2>ИНФОРМАЦИЯ</h2>
-        <div class="underline"></div>
-        <ul>
-          <li><a href="#">Помощь в выборе продукции </a></li>
-          <li><a href="#">Часы работы </a></li>
-          <li><a href="#">Доставка </a></li>
-          <li><a href="#">Оплата</a></li>
-          <li><a href="#">Задать вопрос </a></li>
-          <li><a href="#">Предложение оптовикам</a></li>
-          <li><a href="#">Получить оптовый прайс </a></li>
-          <li><a href="#">О компании </a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <h2>КОНТАКТЫ</h2>
-        <div class="underline"></div>
-        <ul>
-          <li>
-            <a href="#">Наш адрес Симферопольское шоссе,38-й километр, вл4 </a>
-          </li>
-          <li><a href="#">Схема проезда </a></li>
-          <li><a href="#">Задать вопрос </a></li>
-          <li><a href="#"> Сотрудничество </a></li>
-          <li><a href="#">Реквизиты </a></li>
-          <li><a href="#">Часы работы </a></li>
-          <li><a href="#">Торговая марка</a></li>
-        </ul>
-      </div>
-      <!-- Copyright -->
-      <div class="text-center copyright">
-        <a class="text-dark" href="# ">© Русский стакан Россия, 2021</a>
-      </div>
+        <!-- <section class="container-fluid"> -->
+        <div class="col-md-3">
+            <img src="./assets/images/logo.png" style="width: 100%" alt="" />
+            <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="col-md-3">
+            <h2>ПРОДУКЦИЯ</h2>
+            <div class="underline"></div>
+            <ul>
+                <li><a href="./products.html#products">Чай в стаканчике </a></li>
+                <li><a href="./products.html#products">Кофе в стаканчике </a></li>
+                <li><a href="./products.html#products">Капучино в стаканчике </a></li>
+                <li><a href="./products.html#products">Горячий шоколад в стаканчике </a></li>
+                <li><a href="./products.html#products">Крем-супы в стаканчике </a></li>
+                <li><a href="./products.html#products">Молочные коктейли в стаканчике</a></li>
+                <li><a href="./products.html#products">Шиповник в стаканчике</a></li>
+                <li><a href="./products.html#products">Глинтвейн в стаканчике </a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h2>ИНФОРМАЦИЯ</h2>
+            <div class="underline"></div>
+            <ul>
+                <li><a href="./contact.html#question">Помощь в выборе продукции </a></li>
+                <li><a href="./products.html#dostavka">Доставка </a></li>
+                <li><a href="./products.html#dostavka">Оплата</a></li>
+                <li><a href="./index.html#question-main">Задать вопрос </a></li>
+                <li><a href="./wholeseller.html#offer">Предложение оптовикам</a></li>
+                <li><a href="./contact.html#question">Получить оптовый прайс </a></li>
+                <li><a href="./about.html#about">О компании </a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h2>КОНТАКТЫ</h2>
+            <div class="underline"></div>
+            <ul>
+                <li>
+                    <a href="./contact.html#adres">Наш адрес Симферопольское шоссе,38-й километр, вл4
+              </a>
+                </li>
+                <li><a href="./contact.html#adres">Схема проезда </a></li>
+                <li><a href="./contact.html#question">Задать вопрос </a></li>
+                <li><a href="./contact.html#question"> Сотрудничество </a></li>
+                <li><a href="./contact.html#rekvizit">Реквизиты </a></li>
+                <li><a href="./contact.html#adres">Часы работы </a></li>
+                <li><a href="./contact.html#rekvizit">Торговая марка</a></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center copyright">
+            <a class="text-dark" href="./index.html#etinat-stakan">© Русский стакан Россия, 2021</a>
+        </div>
     </footer>
 
     <div class="loader-wrapper">
-      <span class="loader"><img src="./assets/images/logo.png" alt="" /></span>
-            </div>
+        <span class="loader"><img src="./assets/images/logo.png" alt="" /></span>
+    </div>
 
-            <!-- jQuery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-            <!-- Script App -->
-            <script src="./assets/js/preloader.js"></script>
-            <script src="./assets/js/app.js"></script>
-            <script src="./assets/js/validations.js"></script>
-            <script src="./assets/js/scroll.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Script App -->
+    <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/validations.js"></script>
+    <script src="./assets/js/scroll.js"></script>
 </body>
 
 </html>

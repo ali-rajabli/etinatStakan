@@ -200,6 +200,26 @@ body {
     animation: pulse-yellow 2s infinite;
 }
 
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
 @keyframes pulse-yellow {
     0% {
         transform: scale(.95);
@@ -513,12 +533,14 @@ footer ul li a:hover {
 }
 
 footer ul li {
+    width: fit-content;
     list-style: none;
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
 
 footer ul li a {
+    transition: 0.1s;
     color: black;
     text-decoration: none;
 }
@@ -1765,18 +1787,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Minicart */
 
-
-/* .cart-items {
-    top: 100%;
-    width: auto;
-    padding: 25px 0 0;
-    transition: 0.5s;
-} */
-
 .minicart {
     display: none;
-    cursor: pointer;
-    /* justify-content: center; */
     position: fixed;
     top: 263px;
     right: -210px;
@@ -1787,8 +1799,6 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.973);
     border-radius: 6px;
-    /* -webkit-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25); */
-    /* -moz-box-shadow: 0px 30px 130px -8px rgba(0, 0, 0, 0.25); */
     box-shadow: 0px 0px 10px rgba(172, 172, 172, 0.719);
 }
 
@@ -1850,7 +1860,6 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* align-items: center; */
 }
 
 .minicart--item .img-and-name {
@@ -1862,6 +1871,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .minicart--item-remove {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1869,7 +1879,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .minicart--item-remove i {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: rgb(179, 3, 3);
     transition: 0.3s;
 }
@@ -1929,108 +1939,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 /* =================== */
-
-
-/* Prdouct Buy Page */
-
-.product-buy-main {
-    height: 72vh;
-}
-
-.container-product-buy {
-    background-color: rgb(115, 171, 132);
-    position: relative;
-}
-
-.product-buy-page-1 {
-    padding-top: 4rem;
-    color: white;
-    margin-bottom: 1.5rem;
-}
-
-.product-buy-page {
-    padding-top: 8rem;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-}
-
-.product-buy-page-1 h1 {
-    font-family: "Roboto";
-    display: inline;
-    font-weight: 500;
-    font-size: 50px;
-    text-transform: capitalize;
-    white-space: pre-wrap;
-    line-height: 72px;
-    margin-bottom: 2.5rem;
-    border-bottom: 3px solid#306d34;
-}
-
-.product-buy-page-1>h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 20px;
-    font-size: 17px;
-    color: white;
-}
-
-.product-buy-page-1 a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.product-buy-page-1 a:hover {
-    text-decoration: none;
-    color: rgba(155, 229, 178, 0.918);
-}
-
-.section-title-buy {
-    font-size: 2.5rem;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-    margin-bottom: 4rem;
-    font-weight: 500;
-    color: rgb(45, 119, 129);
-}
-
-.section-title-buy span {
-    font-family: 'Rubik', sans-serif;
-    padding-bottom: 5px;
-    border-bottom: 3px solid rgb(45, 119, 129);
-}
-
-.section-title-buy::first-letter {
-    text-transform: capitalize;
-}
-
-.wave-opacity-2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave-opacity-2 svg {
-    position: relative;
-    display: block;
-    width: calc(109% + 1.3px);
-    height: 152px;
-}
-
-.wave-opacity-2 .shape-fill {
-    fill: #ffffff;
-}
-
-.product-buy-page-2 {
-    background: linear-gradient(rgb(255, 255, 255));
-}
-
-.product-buy-page-2 .section-title {
-    font-family: "Rubik", sans-serif;
-}
 
 @media screen and (max-width:1400px) {
     .nav-item a {
@@ -2135,6 +2043,12 @@ input[type="search"]::-webkit-search-cancel-button {
     .home-button:first-of-type {
         margin-right: 0;
     }
+    .tab-1 {
+        border-top-right-radius: 12px;
+    }
+    .tab-3 {
+        border-top-right-radius: 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -2207,7 +2121,7 @@ input[type="search"]::-webkit-search-cancel-button {
         margin-right: 0;
     }
     .container-home {
-        height: 130vh;
+        height: 135vh;
     }
     .image {
         display: block;

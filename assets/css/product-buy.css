@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+.product-buy-main {
+    height: 72vh;
+}
+
+.container-product-buy {
+    background-color: rgb(115, 171, 132);
+    position: relative;
+}
+
+.product-buy-page-1 {
+    padding-top: 4rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.product-buy-page {
+    padding-top: 8rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.product-buy-page-1 h1 {
+    font-family: "Roboto";
+    display: inline;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    line-height: 72px;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid#306d34;
+}
+
+.product-buy-page-1>h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+}
+
+.product-buy-page-1 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.product-buy-page-1 a:hover {
+    text-decoration: none;
+    color: rgba(155, 229, 178, 0.918);
+}
+
+.section-title-buy {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    color: rgb(45, 119, 129);
+}
+
+.section-title-buy span {
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(45, 119, 129);
+}
+
+.section-title-buy::first-letter {
+    text-transform: capitalize;
+}
+
+.wave-opacity-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-opacity-2 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 152px;
+}
+
+.wave-opacity-2 .shape-fill {
+    fill: #ffffff;
+}
+
+.product-buy-page-2 {
+    background: linear-gradient(rgb(255, 255, 255));
+}
+
+.product-buy-page-2 .section-title {
+    font-family: "Rubik", sans-serif;
+}
+
+
+/* .Product-img {
+    width: 30%;
+} */
+
+.product-name {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.4em;
+    text-shadow: 0px 0px 1px #777;
+}
+
+.Product-img img {
+    width: 70%;
+}
+
+.main-section {
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 0px;
+}
