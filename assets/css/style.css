@@ -1794,16 +1794,24 @@ input[type="search"]::-webkit-search-cancel-button {
 .minicart {
     display: none;
     position: fixed;
-    top: 263px;
+    top: 310px;
     right: -210px;
     z-index: 100;
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
+    /* overflow-y: scroll; */
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.973);
     border-radius: 6px;
     box-shadow: 0px 0px 10px rgba(172, 172, 172, 0.719);
+}
+
+.minicart--ul {
+    height: 260px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .minicart.show {
@@ -1864,6 +1872,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .minicart--item .img-and-name {
@@ -1906,6 +1915,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .choosed--items-price,
 .choosed--items-count,
 .minicart--item-price {
+    text-align: center;
     margin-bottom: 4px;
 }
 
@@ -2265,7 +2275,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media screen and (min-width: 500px) {
      ::-webkit-scrollbar {
-        width: 8px;
+        width: 6px;
     }
     /* Track */
      ::-webkit-scrollbar-track {

@@ -64,19 +64,15 @@ setInterval(function() {
 
 // Səbətin hover olanda açılması
 
-$('#cart-button').hover(function() {
-
-}, function() {
-
-})
-
 $('#cart-button').mouseover(function() {
     $('.minicart').css('display', "block")
 })
 $('.cart-items').mouseleave(function() {
         $('.minicart').css('display', "none")
     })
-    // Etinat Filtered
+
+// Etinat Filtered
+
 $('.first-circle-icon').hover(function() {
     $('.circle').removeClass('active')
     $('.first-circle').addClass('active')
@@ -92,4 +88,20 @@ $('.third-circle-icon').hover(function() {
 $('.fourth-circle-icon').hover(function() {
     $('.circle').removeClass('active')
     $('.fourth-circle').addClass('active')
+})
+
+// Confirm PopUp un görünməsi
+
+$('.btn-payment').on('click',function(){
+    $('#payment-popup').css('display','block');
+})
+
+$('.close').on('click',function(){
+    $('#payment-popup').css('display','none');
+})
+
+$(window).on('click', function(event) {
+    if ($('#payment-popup').is(event.target)) {
+        $('#payment-popup').css('display', 'none');
+    }
 })
