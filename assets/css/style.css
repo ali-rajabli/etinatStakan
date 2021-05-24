@@ -1783,10 +1783,13 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .home-image>img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -2310,6 +2313,13 @@ input[type="search"]::-webkit-search-cancel-button {
         height: 280px;
         width: 280px;
         margin: 0 auto 1.5rem;
+    }
+    .home-image {
+        width: 100%;
+        height: 280px;
+    }
+    .content-1 h1 {
+        padding: 0 1.5rem;
     }
 }
 
