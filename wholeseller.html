@@ -21,7 +21,6 @@
 </head>
 
 <body>
-    <!-- Navbar Menu -->
     <header id="header">
         <div class="container-fluid p-0 position-fixed container-nav" style="z-index: 100;">
             <div class="row">
@@ -33,30 +32,94 @@
                 <div class="col-lg-10 nav-sect-2">
                     <nav class="navbar navbar-light navbar-expand-lg">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav nav-sect-3">
                                 <li class="nav-item">
-                                    <a href="./index.html" title="Home" class="position-relative menu-nav">Главная</a>
+                                    <a href="./index.html" class="position-relative menu-nav">Главная</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./products.html" title="Products" class="position-relative menu-nav">Продукция</a>
+                                    <a href="./products.html" class="position-relative menu-nav">Продукция</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./wholeseller.html" title="Whosellers" class="position-relative menu-nav">Оптовикам</a>
+                                    <a href="./wholeseller.html" class="position-relative menu-nav">Оптовикам</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./about.html" title="About Company" class="position-relative menu-nav">О компании</a>
+                                    <a href="./about.html" class="position-relative menu-nav">О компании</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./contact.html" title="Contact" class="position-relative menu-nav">Контакты</a>
+                                    <a href="./contact.html" class="position-relative menu-nav">Контакты</a>
                                 </li>
                                 <li class="nav-item-call">
-                                    <button href="#" title="Obratniy-zvanok" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
+                                    <button href="#" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
                                 </li>
                                 <li class="nav-item-basket">
-                                    <button id="cart-button" title="show-basket" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <button id="cart-button" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <button id="cart-button-phone" class="position-relative menu-nav basket-link" onclick="window.location.href='./product-buy.html'"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <div class="cart-items">
+                                        <div class="minicart">
+                                            <div class="minicart--item-container">
+                                                У вас
+                                                <span class="minicart--item-count" id="cart-items-all-count">2</span> товара в корзине</div>
+                                            <hr>
+                                            <ul>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup4.png" class="choosed--item-image">
+                                                        <h1 class="title">Sah Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">2</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">20</span>₽ (<span id="cart-item-count">2</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup3.png" class="choosed--item-image">
+                                                        <h1 class="title">Saffron Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">1</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">10</span>₽ (<span id="cart-item-count">1</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="./assets/images/cups/cup6.png" class="choosed--item-image">
+                                                        <h1 class="title">Quince Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">3</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">30</span>₽ (<span id="cart-item-count">3</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                            <div class="minicart--subtotal">
+                                                <p class="minicart--subtotal-title">Всего товаров:</p>
+                                                <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">60</span> ₽</p>
+                                            </div>
+                                            <input id="minicart--input" onclick="window.location.href='./product-buy.html'" type="button" value="Просмотр сведений о корзине">
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -64,89 +127,30 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div id="basket-pop-up" class="popup">
-
-        <div class="popup-content">
-            <span class="close"><i class="fas fa-times"></i></span>
-
-            <!-- Səbətə yığılacaqlar -->
-
-            <!-- Boş olanda görünəcək görüntü -->
-
-            <!-- <div class="empty-title-div">Пустой ...</div> -->
-
-            <!-- Səbətdəki mallar -->
-
-            <div id="choosed-items-div">
-
-                <div class="col-3 choosed-item">
-                    <img class="choosed-item-image" src="./assets/images/cups/cup1.png">
-                    <div class="choosed-item-name">Thyme Tea Cup</div>
-                    <div class="choosed-item-price">Цена : 100 ₽</div>
-                    <div class="total-price">Общее : 100 ₽</div>
-                    <div class="change-count-div">
-                        <div class="choosed-item-count">1</div>
-                        <div class="buttons-div">
-                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
-                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
-                        </div>
-                    </div>
-                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
-                </div>
-
-                <div class="col-3 choosed-item">
-                    <img class="choosed-item-image" src="./assets/images/cups/cup3.png">
-                    <div class="choosed-item-name">Saffron Tea Cup</div>
-                    <div class="choosed-item-price">Цена : 100 ₽</div>
-                    <div class="total-price">Общее : 100 ₽</div>
-                    <div class="change-count-div">
-                        <div class="choosed-item-count">1</div>
-                        <div class="buttons-div">
-                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
-                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
-                        </div>
-                    </div>
-                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
-                </div>
-
-                <div class="col-3 choosed-item">
-                    <img class="choosed-item-image" src="./assets/images/cups/cup6.png">
-                    <div class="choosed-item-name">Quince Tea Cup</div>
-                    <div class="choosed-item-price">Цена : 100 ₽</div>
-                    <div class="total-price">Общее : 100 ₽</div>
-                    <div class="change-count-div">
-                        <div class="choosed-item-count">1</div>
-                        <div class="buttons-div">
-                            <button class="decrement-count"><i class="fas fa-minus-square"></i></button>
-                            <button class="increment-count"><i class="fas fa-plus-square"></i></button>
-                        </div>
-                    </div>
-                    <span class="remove-choosed-item"><i class="fas fa-times"></i></span>
-                </div>
-
-
+        <div id="callback-popup" class="popup">
+            <div class="callback-popup-content">
+                <span class="close"><i class="fas fa-times"></i></span>
+                <label for="callback-name-input"><img src="./assets/images/svg/user.svg" alt="" style="height: 25px;width: 35px;">Имя</label>
+                <input id="callback-name-input" class="callback-input" type="text" />
+                <label for="callback-number-input"><img src="./assets/images/svg/phone-call.svg" alt="" style="height: 25px;width: 40px;"> Телефонный номер</label>
+                <input id="callback-number-input" class="callback-input" type="number" />
+                <button id="callback-send-button">Отправить</button>
             </div>
-
         </div>
-    </div>
+    </header>
 
-    <div id="callback-popup" class="popup">
-        <div class="callback-popup-content">
-            <span class="close"><i class="fas fa-times"></i></span>
-            <label for="callback-name-input"><i class="fas fa-user"></i> Имя</label>
-            <input id="callback-name-input" class="callback-input" type="text">
-            <label for="callback-number-input"><i class="fas fa-mobile-alt"></i> Телефонный номер</label>
-            <input id="callback-number-input" class="callback-input" type="number">
-            <button id="callback-send-button">Отправить</button>
-        </div>
-    </div>
 
     <main class="container container-business">
         <div class="business row">
-            <div class="business-content col-lg-5 col-sm-12">
+            <div id="offer" class="business-content col-lg-5 col-sm-12">
                 <h1>Преимущества ETINAT-стаканчик для предпринимателей</h1>
                 <ul>
+                    <li>
+                        <i class="fas fa-ruble-sign"></i>
+                        <p>
+                            Купленный товар стоимостью <strong>10 рублей</strong> можете продать <strong>15 раз (150 рублей)</strong> дороже себестоимости!
+                        </p>
+                    </li>
                     <li>
                         <i class="fas fa-users"></i>
                         <p>
@@ -194,7 +198,7 @@
             <div class="business-img col-lg-7 col-sm-12">
                 <img src="./assets/images/business1.jpg" alt="" />
             </div>
-            <button class="btn my-2">Заказать</button>
+            <button class="btn my-2" onclick="window.location.href='./products.html#products'">Заказать</button>
         </div>
         <div class="business-carousel-section row">
             <div class="section-title" style="color: #366837">Наши награды</div>
@@ -203,7 +207,7 @@
                     Мы всегда проявляем активность на выставках и форумах касающихся питания. За 7 лет нашей работы, мы можем похвастаться наградами с многих тематических выставок и форумов, что характеризует наш продукт признанным сообществом быстрого питания. Посмотреть
                     все наши заслуги вы можете по кнопке ниже.
                 </p>
-                <button class="btn my-2">Награды</button>
+                <button class="btn my-2" onclick="window.location.href='./about.html#rewards'">Награды</button>
             </div>
             <div id="carouselExampleFade" class="carousel slide business-carousel carousel-dark col-lg-7" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -218,17 +222,19 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
             </div>
         </div>
         <div class="business-carousel-section row">
-            <div class="section-title" style="color: #366837">Наше производство</div>
+            <div class="section-title" style="color: #366837">
+                Наше производство
+            </div>
 
             <div id="carouselExampleFade2" class="carousel slide business-carousel carousel-dark col-lg-7" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -261,7 +267,7 @@
                 <p>
                     Мы являемся производителем и создателем ETINAT-стаканчика, оборудование было разработано исключительно по нашим чертежам и схемам. Более подробно по кнопке ниже.
                 </p>
-                <button class="btn my-2">Производство</button>
+                <button class="btn my-2" onclick="window.location.href='./about.html'">Производство</button>
             </div>
         </div>
     </main>
@@ -269,66 +275,65 @@
     <!-- Scroll Button -->
     <button id="scrolltoTop"><i class="fas fa-arrow-up"></i></button>
     <!-- Footer begins -->
-    <footer class="row">
-        <!-- <section class="container-fluid"> -->
-        <div class="col-md-3">
-            <img src="./assets/images/logo.png" style="width: 100%" alt="" />
+    <footer class="row ">
+        <!-- <section class="container-fluid "> -->
+        <div class="col-md-3 ">
+            <img src="./assets/images/logo.png " style="width: 100% " alt=" " />
             <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram "></i>
+            <i class="fab fa-facebook "></i>
+            <i class="fab fa-twitter "></i>
+            <i class="fab fa-linkedin-in "></i>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 ">
             <h2>ПРОДУКЦИЯ</h2>
-            <div class="underline"></div>
+            <div class="underline "></div>
             <ul>
-                <li><a href="#">Чай в стаканчике </a></li>
-                <li><a href="#">Кофе в стаканчике </a></li>
-                <li><a href="#">Капучино в стаканчике </a></li>
-                <li><a href="#">Горячий шоколад в стаканчике </a></li>
-                <li><a href="#">Крем-супы в стаканчике </a></li>
-                <li><a href="#">Молочные коктейли в стаканчике</a></li>
-                <li><a href="#">Шиповник в стаканчике</a></li>
-                <li><a href="#">Глинтвейн в стаканчике </a></li>
+                <li><a href="./products.html#products ">Чай в стаканчике </a></li>
+                <li><a href="./products.html#products ">Кофе в стаканчике </a></li>
+                <li><a href="./products.html#products ">Капучино в стаканчике </a></li>
+                <li><a href="./products.html#products ">Горячий шоколад в стаканчике </a></li>
+                <li><a href="./products.html#products ">Крем-супы в стаканчике </a></li>
+                <li><a href="./products.html#products ">Молочные коктейли в стаканчике</a></li>
+                <li><a href="./products.html#products ">Шиповник в стаканчике</a></li>
+                <li><a href="./products.html#products ">Глинтвейн в стаканчике </a></li>
             </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 ">
             <h2>ИНФОРМАЦИЯ</h2>
-            <div class="underline"></div>
+            <div class="underline "></div>
             <ul>
-                <li><a href="#">Помощь в выборе продукции </a></li>
-                <li><a href="#">Часы работы </a></li>
-                <li><a href="#">Доставка </a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Задать вопрос </a></li>
-                <li><a href="#">Предложение оптовикам</a></li>
-                <li><a href="#">Получить оптовый прайс </a></li>
-                <li><a href="#">О компании </a></li>
+                <li><a href="./contact.html#question ">Помощь в выборе продукции </a></li>
+                <li><a href="./products.html#dostavka ">Доставка </a></li>
+                <li><a href="./products.html#dostavka ">Оплата</a></li>
+                <li><a href="./index.html#question-main ">Задать вопрос </a></li>
+                <li><a href="./wholeseller.html#offer ">Предложение оптовикам</a></li>
+                <li><a href="./contact.html#question ">Получить оптовый прайс </a></li>
+                <li><a href="./about.html#about ">О компании </a></li>
             </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 ">
             <h2>КОНТАКТЫ</h2>
-            <div class="underline"></div>
+            <div class="underline "></div>
             <ul>
                 <li>
-                    <a href="#">Наш адрес Симферопольское шоссе,38-й километр, вл4 </a>
+                    <a href="./contact.html#adres ">Наш адрес г.Москва
+                        ул.Большая Дорогомиловская, дом 1
+              </a>
                 </li>
-                <li><a href="#">Схема проезда </a></li>
-                <li><a href="#">Задать вопрос </a></li>
-                <li><a href="#"> Сотрудничество </a></li>
-                <li><a href="#">Реквизиты </a></li>
-                <li><a href="#">Часы работы </a></li>
-                <li><a href="#">Торговая марка</a></li>
+                <li><a href="./contact.html#adres ">Схема проезда </a></li>
+                <li><a href="./contact.html#question ">Задать вопрос </a></li>
+                <li><a href="./contact.html#question "> Сотрудничество </a></li>
+                <li><a href="./contact.html#rekvizit ">Реквизиты </a></li>
+                <li><a href="./contact.html#adres ">Часы работы </a></li>
+                <li><a href="./contact.html#rekvizit ">Торговая марка</a></li>
             </ul>
         </div>
-
         <!-- Copyright -->
-        <div class="text-center copyright">
-            <a class="text-dark" href="# ">© Русский стакан Россия, 2021</a>
+        <div class="text-center copyright ">
+            <a class="text-dark " href="./index.html#etinat-stakan ">© ETINAT-стакан Россия, 2021</a>
         </div>
     </footer>
-
     <div class="loader-wrapper">
         <span class="loader"><img src="./assets/images/logo.png" alt="" /></span>
     </div>
