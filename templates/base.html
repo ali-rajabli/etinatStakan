@@ -1,0 +1,191 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block page_title %}{% endblock %}</title>
+    <link rel="icon" href="{% static 'images/logo.png' %}" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!-- Meterial Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/5484ef70c0.js" crossorigin="anonymous"></script>
+    {% block css_addition %}{% endblock css_addition %}
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid p-0 position-fixed container-nav" style="z-index: 100;">
+            <div class="row">
+                <div class="col-lg-2 nav-sect-1">
+                    <div class="logo-div">
+                        <a href="{% url 'homepage' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 nav-sect-2">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav nav-sect-3">
+                                <li class="nav-item">
+                                    <a href="{% url 'homepage' %}" class="position-relative menu-nav">{% trans "Главная" %}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'products' %}" class="position-relative menu-nav">{% trans "Продукция" %}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'wholesalers' %}" class="position-relative menu-nav">{% trans "Оптовикам" %}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'about' %}" class="position-relative menu-nav">{% trans "О компании" %}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contacts' %}" class="position-relative menu-nav">{% trans "Контакты" %}</a>
+                                </li>
+                                <li class="nav-item-call">
+                                    <button href="#" class="position-relative menu-nav call-back-link">{% trans "Обратный звонок " %}<i class="fas fa-phone"></i></button>
+                                </li>
+                                <li class="nav-item-basket">
+                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span>{% trans " шт "%}
+                                    {% comment %} <span class="total-cart-price">0.0</span>₽ {% endcomment %}
+                                    </a>
+                                    <a id="cart-button-phone" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span>{% trans " шт "%}<span class="total-cart-price">0.0</span>₽</a>
+                                    <div class="cart-items">
+                                        <div class="minicart">
+                                            <div class="minicart--item-container">
+                                                {% trans "У вас"%}
+                                                <span class="minicart--item-count" id="cart-items-all-count"></span>{% trans " товара в корзине"%}</div>
+                                            <hr>
+                                            <ul class="minicart--ul">
+                                            </ul>
+                                            {% comment %} <div class="minicart--subtotal">
+                                                <p class="minicart--subtotal-title">Всего товаров:</p>
+                                                <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">0</span> ₽</p>
+                                            </div> {% endcomment %}
+                                            <input id="minicart--input" onclick="window.location.href='{% url 'checkout' %}'" type="button" value="Просмотр сведений о корзине">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="callback-popup" class="popup">
+            <form id="callback_form" onsubmit="return false;">
+                <div class="callback-popup-content">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <label for="callback-name-input"><img src="{% static 'images/svg/user.svg' %}" alt="" style="height: 25px;width: 35px;">{% trans "Имя"%}</label>
+                    <input id="callback-name-input" class="callback-input" name="name" type="text" />
+                    <label for="callback-number-input"><img src="{% static 'images/svg/phone-call.svg' %}" alt="" style="height: 25px;width: 40px;">{% trans " Телефонный номер"%}</label>
+                    <input id="callback-number-input" name="phone" class="callback-input" type="number" />
+                    <button id="callback-send-button">{% trans "Отправить"%}</button>
+                </div>
+                {% csrf_token %}
+            </form>
+        </div>
+    </header>
+    {% block content %}{% endblock content %}
+    <!-- Scroll Button -->
+    {% comment %} <button id="scrolltoTop">
+        <i class="fas fa-arrow-up"></i>
+        <span style="position: absolute; left: 50%; top: -30px; margin-left: -20px; color: black;">{% trans "вверх"%}</span>
+    </button> {% endcomment %}
+    <!-- Footer begins -->
+    <footer class="row ">
+        <!-- <section class="container-fluid "> -->
+        <div class="col-md-3 ">
+            <img src="{% static 'images/logo.png' %}" style="width: 100% " alt=" " />
+            {% comment %} <h3>{% trans  'Подпишитесь на нашу рассылку и получите скидка 30%' %}</h3>
+            <i class="fab fa-instagram "></i>
+            <i class="fab fa-facebook "></i>
+            <i class="fab fa-twitter "></i>
+            <i class="fab fa-linkedin-in "></i> {% endcomment %}
+        </div>
+        <div class="col-md-3 ">
+            <h2>{% trans "ПРОДУКЦИЯ"%}</h2>
+            <div class="underline "></div>
+            <ul>
+                <li><a href="{% static 'files/pdf-1.pdf' %}">{% trans "Каталог номер Один"%}</a></li>
+                <li><a href="{% static 'files/pdf-2.pdf' %}">{% trans "Каталог номер Два"%}</a></li>
+                <li><a href="{% static 'files/pdf-3.pdf' %}">{% trans "Каталог номер Три"%}</a></li>
+                <li><a href="{% static 'files/pdf-4.pdf' %}">{% trans "Каталог номер Четыре"%}</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 ">
+            <h2>{% trans "ИНФОРМАЦИЯ"%}</h2>
+            <div class="underline "></div>
+            <ul>
+                <li><a href="{% url 'contacts' %}#question ">{% trans "Помощь в выборе продукции "%}</a></li>
+                <li><a href="{% url 'products' %}#dostavka ">{% trans "Доставка "%}</a></li>
+                <li><a href="{% url 'products' %}#dostavka ">{% trans "Оплата"%}</a></li>
+                <li><a href="{% url 'homepage' %}#question-main ">{% trans "Задать вопрос"%} </a></li>
+                <li><a href="{% url 'wholesalers' %}#offer ">{% trans "Предложение оптовикам"%}</a></li>
+                <li><a href="{% url 'contacts' %}#question ">{% trans "Получить оптовый прайс"%} </a></li>
+                <li><a href="{% url 'about' %}#about ">{% trans "О компании "%}</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 ">
+            <h2>{% trans "КОНТАКТЫ"%}</h2>
+            <div class="underline "></div>
+            <ul>
+                <li>
+                    <a href="{% url 'contacts' %}#adres ">{% trans "Наш адрес г.Москва ул.Большая Дорогомиловская, дом 1"%}</a>
+                </li>
+                <li><a href="{% url 'contacts' %}#adres ">{% trans "Схема проезда"%} </a></li>
+                <li><a href="{% url 'contacts' %}#question ">{% trans "Задать вопрос"%} </a></li>
+                <li><a href="{% url 'contacts' %}#question "> {% trans "Сотрудничество"%} </a></li>
+                <li><a href="{% url 'contacts' %}#rekvizit ">{% trans "Реквизиты "%}</a></li>
+                <li><a href="{% url 'contacts' %}#adres ">{% trans "Часы работы "%}</a></li>
+                <li><a href="{% url 'contacts' %}#rekvizit ">{% trans "Торговая марка"%}</a></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center copyright ">
+            <a class="text-dark " href="{% url 'homepage' %}#etinat-stakan ">{% trans "© ETINAT-стакан Россия, 2021"%}</a>
+        </div>
+    </footer>
+    <div class="loader-wrapper ">
+        <span class="loader "><img src="{% static 'images/logo.png' %}" alt=" " /></span>
+    </div>
+    <!-- jQuery -->
+    <script>
+        const _APP_SETTINGS = {
+            statics: {
+                minusSVG: '{% static 'images/product-buy/minus.svg' %}',
+                plusSVG: '{% static 'images/product-buy/plus.svg' %}',
+            },
+            paths: {
+                checkoutUri: "{% url 'checkout_complete' %}",
+                wholesalersUri: "{% url 'wholesalers' %}",
+                callbackUri: "{% url 'callback' %}",
+                sendMessage: "{% url 'send_message' %}"
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+    <!-- Script App -->
+    <script src="{% static 'js/storage.js' %}"></script>
+    <script src="{% static 'js/preloader.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/validations.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
+    <script src="{% static 'js/products.js' %}"></script>
+    {% block js_addition %}{% endblock js_addition %}
+</body>
+</html>
